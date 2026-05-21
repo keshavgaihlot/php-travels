@@ -1,0 +1,49 @@
+name: Flight Booking Tests
+
+# When to run — on every push or pull request to main branch
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  test:
+    # Run on latest Ubuntu (free on GitHub)
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Download your code
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      # Step 2: Install Node.js
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      # Step 3: Install your npm packages
+      - name: Install dependencies
+        run: npm install
+
+      # Step 4: Install Playwright browsers
+      - name: Install Playwright browsers
+        run: npx playwright install chromium --with-deps
+
+      # Step 5: Run Cucumber tests
+      - name: Run tests
+        run: npx cucumber-js
+
+      # Step 6: Generate HTML report
+      - name: Generate report
+        run: node generate-report.js
+        if: always()  # run even if tests fail
+
+      # Step 7: Upload report so you can download it from GitHub
+      - name: Upload HTML report
+        uses: actions/upload-artifact@v3
+        if: always()
+        with:
+          name: cucumber-html-report
+          path: cucumber-html-report/
