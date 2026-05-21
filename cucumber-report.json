@@ -1,0 +1,196 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "flight-booking;user-books-one-way-flight-successfully",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "User books one way flight successfully",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1904159500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "User launches PHPTravels website",
+            "match": {
+              "location": "features\\step_definitions\\flightBookingSteps.js:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10819028000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "User accepts popup",
+            "match": {
+              "location": "features\\step_definitions\\flightBookingSteps.js:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1345074599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "User navigates to flights page",
+            "match": {
+              "location": "features\\step_definitions\\flightBookingSteps.js:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1328819800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "User selects one way trip",
+            "match": {
+              "location": "features\\step_definitions\\flightBookingSteps.js:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 787780600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "User enters source city \"Delhi\"",
+            "match": {
+              "location": "features\\step_definitions\\flightBookingSteps.js:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1959503499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "User enters destination city \"Mumbai\"",
+            "match": {
+              "location": "features\\step_definitions\\flightBookingSteps.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1581460100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "User selects departure date",
+            "match": {
+              "location": "features\\step_definitions\\flightBookingSteps.js:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 920679900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "User clicks on search flights",
+            "match": {
+              "location": "features\\step_definitions\\flightBookingSteps.js:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3389198699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "User books first available flight",
+            "match": {
+              "location": "features\\step_definitions\\flightBookingSteps.js:39"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10928482799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "User enters passenger details",
+            "match": {
+              "location": "features\\step_definitions\\flightBookingSteps.js:43"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1907523500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "User confirms booking",
+            "match": {
+              "location": "features\\step_definitions\\flightBookingSteps.js:47"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 286886500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "Booking should be successful",
+            "match": {
+              "location": "features\\step_definitions\\flightBookingSteps.js:51"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6409451100
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1319110600
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "flight-booking",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Flight Booking",
+    "tags": [],
+    "uri": "features\\flightBooking.feature"
+  }
+]
