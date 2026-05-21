@@ -4,7 +4,7 @@ const { chromium } = require('playwright');
 setDefaultTimeout(90 * 1000);
 
 Before(async function () {
-    this.browser = await chromium.launch({ headless: false });
+    this.browser = await chromium.launch({ headless: true });
     this.page = await this.browser.newPage();
     await this.page.setViewportSize({ width: 1280, height: 720 });
 });
